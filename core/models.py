@@ -56,4 +56,4 @@ class Registro(BaseModel):
         verbose_name_plural = 'Registros'
     
     def __str__(self):
-        return self.nome
+        return self.titulo
