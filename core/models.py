@@ -45,9 +45,17 @@ class Membro(BaseModel):
     
 
 class Registro(BaseModel):
+    ETAPA_CHOICES = (
+        ('desenvolvimento','Desenvolvimento'),
+        ('pesquisa', 'Pesquisa'),
+        ('aplicacao','Aplicação'),
+    )
+
+
     titulo = models.CharField('Título', max_length=50)
-    etapa = models.CharField('Etapa', max_length=50)
+    etapa = models.CharField('Etapa', max_length=20, choices=ETAPA_CHOICES)
     objetivo = models.CharField('Objetivo', max_length=50)
+    data = models.DateField(verbose_name='Data', help_text='Formato: dd/mm/aa', null=True)
     imagem = StdImageField('Imagem', upload_to=get_file_path, variations= {'thumb':{'width':640, 'height':400, 'crop':True}} )
     descricao = models.TextField('descricao', max_length=150, null=True)
 

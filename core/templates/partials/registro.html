@@ -1,5 +1,5 @@
 {%load static%}
-<div class="section secondary-section " id="portfolio">
+<div class="section secondary-section " id="registro">
     <div class="triangle"></div>
     <div class="container">
         <div class=" title">
@@ -8,16 +8,16 @@
         </div>
         <ul class="nav nav-pills">
             <li class="filter" data-filter="all">
-                <a href="#noAction">All</a>
+                <a href="#noAction">Todos</a>
             </li>
-            <li class="filter" data-filter="etapa 1">
-                <a href="#noAction">Web</a>
+            <li class="filter" data-filter="pesquisa">
+                <a href="#noAction">Pesquisa</a>
             </li>
-            <li class="filter" data-filter="etapa 0">
-                <a href="#noAction">Photo</a>
+            <li class="filter" data-filter="desenvolvimento">
+                <a href="#noAction">Desenvolvimento</a>
             </li>
-            <li class="filter" data-filter="identity">
-                <a href="#noAction">Identity</a>
+            <li class="filter" data-filter="aplicacao">
+                <a href="#noAction">Aplicação</a>
             </li>
         </ul>
 
@@ -44,11 +44,9 @@
                             <div>
                                 <span>Etapa</span>{{registro.etapa}}</div>
                             <div>
-                                <span>Date</span>July 2013</div>
+                                <span>Date</span>{{registro.data}}</div>
                             <div>
                                 <span>Objetivo</span>{{registro.objetivo}}</div>
-                            <div>
-                                <span>Link</span>http://examplecomp.com</div>
                         </div>
                         <p>{{registro.descricao}}</p>
                     </div>
@@ -66,7 +64,6 @@
                             <i class="icon-plus"></i>
                         </a>
                         <h3>{{registro.titulo}}</h3>
-                        <p>{{registro.objetivo}}</p>
                         <div class="mask"></div>
                     </div>
                 </li>

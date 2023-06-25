@@ -12,6 +12,6 @@ class IndexView(TemplateView):
         context['membro2'] = Membro.objects.get(id=2)
         context['membro3'] = Membro.objects.get(id=3)
         context['registros'] = Registro.objects.all()
-        print(context['registros'])
+        
 
         return context
