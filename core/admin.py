@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Membro, Cargo, Registro
+from .models import Membro, Cargo, Registro, SugestoesModel
 
 
 @admin.register(Cargo)
@@ -14,3 +14,7 @@ class MembroAdmin(admin.ModelAdmin):
 @admin.register(Registro)
 class RegistroAdmin(admin.ModelAdmin):
     list_display = ('titulo', 'etapa', 'objetivo', 'ativo')
+
+@admin.register(SugestoesModel)
+class SugestoesAdmin(admin.ModelAdmin):
+    list_display = ('nome', 'email', 'ativo')

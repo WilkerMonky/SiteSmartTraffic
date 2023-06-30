@@ -1,0 +1,53 @@
+{%load static%}
+<div id="contact" class="contact">
+    <div class="section secondary-section"  style="background-color: #181A1C; color: white;">
+        <div class="container" style="color: white">
+            <div class="title" style="color: white">
+                <h1 style="color: white">Fale conosco</h1>
+                <p style="color: white">Opniões diferentes são cruciais em todos os
+                    projetos, estamos ansiosos para ler suas críticas, sugestões ou idéias</p>
+            </div>
+            <div class="title">
+            </div>
+        </div>
+        <div class="map-wrapper"  >
+            <div class="map-canvas" id="map-canvas"><img src="{%static 'img/'%}" alt="Imagem Semaforo"></div>
+            <div class="container">
+                <div class="row-fluid">
+                    <div class="span5 contact-form centered">
+                        <h3>Deixe sua mensagem</h3>
+                        <div id="successSend" class="alert alert-success invisible">
+                            <strong>Sucesso!</strong>Sua mensagem foi enviada.</div>
+                        <div id="errorSend" class="alert alert-error invisible">Erro ao enviar a mensagem.</div>
+                        <form id="contact-form" action="php/mail.php">
+                            <div class="control-group">
+                                <div class="controls">
+                                    <input class="span12" type="text" id="name" name="name" placeholder="* Nome..." />
+                                    <div class="error left-align" id="err-name">Por favor insira seu nome.</div>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <div class="controls">
+                                    <input class="span12" type="email" name="email" id="email" placeholder="* Email..." />
+                                    <div class="error left-align" id="err-email">Por favor insira um email válido</div>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <div class="controls">
+                                    <textarea class="span12" name="comment" id="comment" placeholder="* Mensagem..."></textarea>
+                                    <div class="error left-align" id="err-comment">Por favor insira um comentário válido</div>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <div class="controls">
+                                    <button id="send-mail" class="message-btn">Enviar</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

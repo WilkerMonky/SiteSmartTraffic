@@ -65,3 +65,16 @@ class Registro(BaseModel):
     
     def __str__(self):
         return self.titulo
+    
+
+class SugestoesModel(BaseModel):
+    nome = models.CharField('Nome', max_length=100)
+    email = models.CharField('Email', max_length=100)
+    mensagem = models.TextField('Sugestões', max_length=500)
+
+    class Meta:
+        verbose_name = 'Sugestão'
+        verbose_name_plural = 'Sugestões'
+    
+    def __str__(self):
+        return self.nome

@@ -1,0 +1,73 @@
+[33mcommit db7b196c85ebff90b6f0c23b8c1ef15a4cc97261[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Wilker <weslleywilker2@gmail.com>
+Date:   Sat Jun 24 22:48:11 2023 -0300
+
+    Pequenas correções no menu e melhoria na model registros
+
+[33mcommit 32630162d2743f88a863cf99fe2c01c4f0386b20[m
+Merge: 94b8ccf d3e17b5
+Author: Wilker <weslleywilker2@gmail.com>
+Date:   Fri Jun 23 23:49:56 2023 -0300
+
+    Merge branch 'main' of https://github.com/WilkerMonky/SiteSmartTraffic
+
+[33mcommit 94b8ccfe07f17d072336e62149d6b115622ef305[m
+Author: Wilker <weslleywilker2@gmail.com>
+Date:   Fri Jun 23 23:44:49 2023 -0300
+
+    Inclusão dos 'Registros'
+
+[33mcommit d3e17b51405b3bc58ae0aaf49b2c8d93f78dbdc2[m
+Merge: dea3dbd 86e2c3d
+Author: suzana-space <suzanasouza.caetano@gmail.com>
+Date:   Fri Jun 23 12:05:09 2023 -0300
+
+    Merge branch 'main' of https://github.com/WilkerMonky/SiteSmartTraffic
+
+[33mcommit dea3dbdd5d21ff458b21c1a2b57980afffb396b4[m
+Author: suzana-space <suzanasouza.caetano@gmail.com>
+Date:   Fri Jun 23 11:51:22 2023 -0300
+
+    teste
+
+[33mcommit 86e2c3d4a692896532cefe38abc3a6401faef1fc[m
+Author: Wilker <120031747+WilkerMonky@users.noreply.github.com>
+Date:   Thu Jun 22 22:15:30 2023 -0300
+
+    SOBRE_O_PROJETO.md
+
+[33mcommit 3781a387dc74c3dc683fb60b2880e2bfcd575c03[m
+Author: Wilker <weslleywilker2@gmail.com>
+Date:   Thu Jun 22 22:03:24 2023 -0300
+
+    Adição do download do PDF
+
+[33mcommit 36854c39a7c5c178ddea41b8511149e2c0fd0db6[m
+Author: Wilker <weslleywilker2@gmail.com>
+Date:   Thu Jun 22 21:46:43 2023 -0300
+
+    Edição nas skills
+
+[33mcommit c799da52b2a7999b27ee357505d4adcddc0754d1[m
+Author: Wilker <weslleywilker2@gmail.com>
+Date:   Wed Jun 21 00:02:49 2023 -0300
+
+    Edições no template de membros
+
+[33mcommit 34b464859f60ccf49ee6974e76ef697200eeb908[m
+Author: Wilker <weslleywilker2@gmail.com>
+Date:   Tue Jun 20 23:42:04 2023 -0300
+
+    Mudanças nos servicos, adição das models, adição da MEDIA_ROOT
+
+[33mcommit 84aafe06c6edf4ef6a3fc841e6eac1a6987c0ac6[m
+Author: suzana-space <suzana@adxspace.com.br>
+Date:   Tue Jun 20 17:58:42 2023 -0300
+
+    teste
+
+[33mcommit f463b2d25a59c6ff4d4ee6a878308af6a4b58230[m
+Author: Wilker <weslleywilker2@gmail.com>
+Date:   Mon Jun 19 22:16:21 2023 -0300
+
+    first commit
