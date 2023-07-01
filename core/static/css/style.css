@@ -27,6 +27,11 @@
 /*
 1. General
 **********************************************************************/
+.coluna {
+    display: inline-block;
+    width: 33.33%; /* Para dividir igualmente em três colunas */
+    vertical-align: top; /* Para alinhar o conteúdo ao topo */
+  }
  body {
     font-family:'Roboto', sans-serif;
     color: #FFF;
