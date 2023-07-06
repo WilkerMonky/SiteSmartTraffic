@@ -1,1 +1,1 @@
-web: gunicorn semaforo.wsgi --log-file -
+web: gunicorn semaforo.wsgi:application
