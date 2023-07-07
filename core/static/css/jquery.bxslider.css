@@ -18,7 +18,7 @@
 	position: relative;
 	margin: 0 auto 60px;
 	padding: 0;
-	*zoom: 1;
+	
 }
 
 .bx-wrapper ul{
@@ -95,7 +95,7 @@
 .bx-wrapper .bx-pager .bx-pager-item,
 .bx-wrapper .bx-controls-auto .bx-controls-auto-item {
 	display: inline-block;
-	*zoom: 1;
+	
 	*display: inline;
 }
 
