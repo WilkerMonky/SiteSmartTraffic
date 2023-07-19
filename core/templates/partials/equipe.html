@@ -1,0 +1,137 @@
+{% load static compress %}
+<div class="section primary-section" id="equipe">
+    <div class="triangle"></div>
+    <div class="container">
+        <div class="title">
+            <h1>Quem nós somos?</h1>
+            <p>Somos pseudos programadores, que sonham em ser bem sucedidos.</p>
+        </div>
+        <div class="row-fluid team">
+            <div class="span4" id="first-person">
+                <div class="thumbnail">
+                    <img src="{{membro1.foto.thumb.url}}" alt="team 1">
+                    <h3>{{membro1.nome}}</h3>
+                    <ul class="social">
+                        <li>
+                            <a href="">
+                                <span class="icon-facebook-circled"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{membro1.github}}">
+                                <span class="icon-github-circled"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{membro1.linkedn}}">
+                                <span class="icon-linkedin-circled"></span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="mask">
+                        <h2>{{membro1.cargo}}</h2>
+                        <p>{{membro1.bio}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="span4" id="second-person">
+                <div class="thumbnail">
+                    <img src="{{membro2.foto.thumb.url}}" alt="team 1">
+                    <h3>{{membro2.nome}}</h3>
+                    <ul class="social">
+                        <li>
+                            <a href="">
+                                <span class="icon-facebook-circled"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{membro2.github}}">
+                                <span class="icon-github-circled"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{membro2.linkedn}}">
+                                <span class="icon-linkedin-circled"></span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="mask">
+                        <h2>{{membro2.cargo}}</h2>
+                        <p>{{membro2.bio}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="span4" id="third-person">
+                <div class="thumbnail">
+                    <img src="{{membro3.foto.thumb.url}}" alt="team 1">
+                    <h3>{{membro3.nome}}</h3>
+                    <ul class="social">
+                        <li>
+                            <a href="">
+                                <span class="icon-facebook-circled"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{membro3.github}}">
+                                <span class="icon-github-circled"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{membro3.linkedn}}">
+                                <span class="icon-linkedin-circled"></span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="mask">
+                        <h2>{{membro3.cargo}}</h2>
+                        <p>{{membro3.bio}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--SKills-->
+        <div class="about-text centered">
+            <h3>Sobre nós</h3>
+            <p>Somos um grupo de alunos dedicados do curso de Ciências da Computação, apaixonados por tecnologia
+            e com uma sede insaciável de conhecimento. Buscamos constantemente expandir nossas habilidades e
+            explorar os desafios do mundo da programação. Combinamos criatividade, raciocínio lógico e
+            trabalho em equipe para desenvolver soluções inovadoras e impactantes. Estamos prontos para
+            enfrentar os desafios do campo da computação e contribuir para um futuro tecnológico promissor.
+            </p>
+        </div>
+        <h3>Skills</h3>
+        <div class="row-fluid">
+            <div class="span6">
+                <ul class="skills">
+                    <li>
+                        <span class="bar" data-width="80%"></span>
+                        <h3>Programação web - backend</h3>
+                    </li>
+                    <li>
+                        <span class="bar" data-width="85%"></span>
+                        <h3>Programação web - frontend</h3>
+                    </li>
+                    <li>
+                        <span class="bar" data-width="65%"></span>
+                        <h3>Estrutura de dados</h3>
+                    </li>
+                    <li>
+                        <span class="bar" data-width="97%"></span>
+                        <h3>Sistemas Embarcados</h3>
+                    </li>
+                </ul>
+            </div>
+            <div class="span6" id="artigo">
+                <div class="highlighted-box center">
+                    <h1>Leia nosso artigo</h1>
+                    <p>Nele detalhamos melhor as funcionalidades e os objetivos do projeto e como ele impacta de maneira
+                        positiva o dia-dia das pessoas, contribuindo para um trânsito mais eficiente e seguro
+                    </p>
+                    <button class="button button-sp"><a href="{% static 'pdf/ProjetoPibitSemaforo.CORRIGIDO.FINAL(1).pdf' %}" download>Baixe Aqui</a>
+                        </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

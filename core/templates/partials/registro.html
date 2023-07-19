@@ -1,0 +1,77 @@
+{% load static compress %}
+<div class="section secondary-section " id="registro">
+    <div class="triangle"></div>
+    <div class="container">
+        <div class=" title">
+            <h1>Confira as etapas do nosso projeto</h1>
+            <p>Cada momento se prova único e extremamente importante para nossa vida acadêmica enquanto desenvolvedores</p>
+        </div>
+        <ul class="nav nav-pills">
+            <li class="filter" data-filter="all">
+                <a href="#noAction">Todos</a>
+            </li>
+            <li class="filter" data-filter="pesquisa">
+                <a href="#noAction">Pesquisa</a>
+            </li>
+            <li class="filter" data-filter="desenvolvimento">
+                <a href="#noAction">Desenvolvimento</a>
+            </li>
+            <li class="filter" data-filter="aplicacao">
+                <a href="#noAction">Aplicação</a>
+            </li>
+        </ul>
+
+
+
+        <!-- Start details for portfolio project 1 -->
+        
+        
+        <div id="single-project">
+            {%for registro in registros %}
+            <div id="slidingDiv{{registro.id}}" class="toggleDiv row-fluid single-project">
+                <div class="span6">
+                    <img src="{{registro.imagem.thumb.url}}" alt="{{registro.titulo}}" />
+                </div>
+                <div class="span6">
+                    <div class="project-description">
+                        <div class="project-title clearfix">
+                            <h3>{{registro.titulo}}</h3>
+                            <span class="show_hide close">
+                                <i class="icon-cancel"></i>
+                            </span>
+                        </div>
+                        <div class="project-info">
+                            <div>
+                                <span>Etapa</span>{{registro.etapa}}</div>
+                            <div>
+                                <span>Date</span>{{registro.data}}</div>
+                            <div>
+                                <span>Objetivo</span>{{registro.objetivo}}</div>
+                        </div>
+                        <p>{{registro.descricao}}</p>
+                    </div>
+                </div>
+            </div>
+            {%endfor%}
+            <!-- End details for portfolio project 1 -->
+            
+            <ul id="portfolio-grid" class="thumbnails row">
+                {%for registro in registros %}
+                <li class="span4 mix {{registro.etapa}}">
+                    <div class="thumbnail">
+                        <img src="{{registro.imagem.thumb.url}}" alt="{{registro.titulo}}">
+                        <a href="#single-project" class="show_hide more" rel="#slidingDiv{{registro.id}}">
+                            <i class="icon-plus"></i>
+                        </a>
+                        <h3>{{registro.titulo}}</h3>
+                        <div class="mask"></div>
+                    </div>
+                </li>
+                {%endfor%}
+            </ul>
+            
+        </div>
+        
+    </div>
+    
+</div>
